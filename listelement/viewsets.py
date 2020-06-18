@@ -13,7 +13,12 @@ class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-   
+    @action(detail=True, methods=['get'])
+    def elements(self, request, pk=None):
+        queryset = Element.objects.filter(category_id=pk)
+        serializer = ElementSerializer(queryset, many=True)
+        return Response(serializer.data)
+
     '''def list(self, request):
         queryset = Category.objects.all()
         serializer = CategorySerializer(queryset, many=True)
