@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-06-2020 a las 15:25:20
+-- Tiempo de generación: 19-06-2020 a las 16:41:29
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.2.28
 
@@ -116,7 +116,8 @@ CREATE TABLE `auth_user` (
 --
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
-(1, 'pbkdf2_sha256$100000$PQO6NBpnzkPq$d1tMA875eretrciiqDeD4QD97oASEGlUGWB5w2lI3Nk=', '2020-06-18 16:35:57.869432', 1, 'admin', '', '', 'admin@prueba.com', 1, 1, '2020-06-18 16:35:14.464011');
+(1, 'pbkdf2_sha256$100000$PQO6NBpnzkPq$d1tMA875eretrciiqDeD4QD97oASEGlUGWB5w2lI3Nk=', '2020-06-18 16:35:57.869432', 1, 'admin', '', '', 'admin@prueba.com', 1, 1, '2020-06-18 16:35:14.464011'),
+(2, 'pbkdf2_sha256$100000$0G2uN7S27cPT$ZjT+fDjnVQKG6vUsGADLQclOxr1EPSW93PH7+gktZH4=', NULL, 0, 'jessi20', '', '', '', 0, 1, '2020-06-19 20:54:52.024477');
 
 -- --------------------------------------------------------
 
@@ -170,7 +171,66 @@ INSERT INTO `django_admin_log` (`id`, `action_time`, `object_id`, `object_repr`,
 (4, '2020-06-18 16:40:26.269081', '1', 'Element object (1)', 1, '[{\"added\": {}}]', 8, 1),
 (5, '2020-06-18 20:21:07.971832', '2', 'elemento 1', 1, '[{\"added\": {}}]', 8, 1),
 (6, '2020-06-18 20:21:30.935658', '3', 'Elemento 3', 1, '[{\"added\": {}}]', 8, 1),
-(7, '2020-06-18 20:21:48.422582', '4', 'Elemento 4', 1, '[{\"added\": {}}]', 8, 1);
+(7, '2020-06-18 20:21:48.422582', '4', 'Elemento 4', 1, '[{\"added\": {}}]', 8, 1),
+(8, '2020-06-19 20:54:52.433445', '2', 'jessi20', 1, '[{\"added\": {}}]', 4, 1),
+(9, '2020-06-19 20:55:47.930445', '1', 'cate 1', 3, '', 7, 1),
+(10, '2020-06-19 20:56:15.027581', '2', 'Ciencias de la computación', 1, '[{\"added\": {}}]', 7, 1),
+(11, '2020-06-19 20:58:43.944829', '3', 'Cuidadanía Digital', 1, '[{\"added\": {}}]', 7, 1),
+(12, '2020-06-19 21:01:29.475183', '3', 'Empresa', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 7, 1),
+(13, '2020-06-19 21:02:42.457317', '2', 'Canales de YouTube', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 7, 1),
+(14, '2020-06-19 21:02:50.250177', '3', 'Empresas', 2, '[{\"changed\": {\"fields\": [\"title\"]}}]', 7, 1),
+(15, '2020-06-19 21:03:05.402168', '4', 'Cursos', 1, '[{\"added\": {}}]', 7, 1),
+(16, '2020-06-19 21:03:46.688548', '1', 'Platzi', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(17, '2020-06-19 21:04:17.298383', '2', 'Amazon', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(18, '2020-06-19 21:04:25.270854', '4', 'Apple', 1, '[{\"added\": {}}]', 9, 1),
+(19, '2020-06-19 21:04:33.733634', '5', 'Google', 1, '[{\"added\": {}}]', 9, 1),
+(20, '2020-06-19 21:04:45.068191', '6', 'WeChat', 1, '[{\"added\": {}}]', 9, 1),
+(21, '2020-06-19 21:05:24.641909', '1', 'Tecnología', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(22, '2020-06-19 21:06:15.549097', '3', 'Desarrollo web', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 7, 1),
+(23, '2020-06-19 21:06:27.126913', '4', 'Aplicaciones móviles', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 7, 1),
+(24, '2020-06-19 21:06:43.014483', '5', 'Desarrollo de videojuegos', 1, '[{\"added\": {}}]', 7, 1),
+(25, '2020-06-19 21:06:51.008328', '6', 'Finanzas', 1, '[{\"added\": {}}]', 7, 1),
+(26, '2020-06-19 21:07:02.023285', '7', 'Emprendimiento', 1, '[{\"added\": {}}]', 7, 1),
+(27, '2020-06-19 21:07:13.431721', '8', 'Datos y análisis', 1, '[{\"added\": {}}]', 7, 1),
+(28, '2020-06-19 21:07:22.999726', '9', 'Diseño gráfico', 1, '[{\"added\": {}}]', 7, 1),
+(29, '2020-06-19 21:07:42.378912', '10', 'Música', 1, '[{\"added\": {}}]', 7, 1),
+(30, '2020-06-19 21:08:22.552892', '1', 'Desarrollo web', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(31, '2020-06-19 21:08:35.665071', '2', 'React', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(32, '2020-06-19 21:08:42.539283', '4', 'PHP', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(33, '2020-06-19 21:08:51.879277', '5', 'Python', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(34, '2020-06-19 21:09:14.858126', '6', 'Swift', 2, '[{\"changed\": {\"fields\": [\"title\", \"url_clean\"]}}]', 9, 1),
+(35, '2020-06-19 21:09:27.559219', '7', 'Kotlin', 1, '[{\"added\": {}}]', 9, 1),
+(36, '2020-06-19 21:09:31.834523', '7', 'Kotlin', 2, '[{\"changed\": {\"fields\": [\"url_clean\"]}}]', 9, 1),
+(37, '2020-06-19 21:09:35.963660', '7', 'Kotlin', 2, '[]', 9, 1),
+(38, '2020-06-19 21:09:48.548059', '8', 'Blender', 1, '[{\"added\": {}}]', 9, 1),
+(39, '2020-06-19 21:10:08.589139', '9', 'Plan de negocios', 1, '[{\"added\": {}}]', 9, 1),
+(40, '2020-06-19 21:10:21.342920', '10', 'Shopify', 1, '[{\"added\": {}}]', 9, 1),
+(41, '2020-06-19 21:21:58.253224', '11', 'Seguridad informatica y forense', 1, '[{\"added\": {}}]', 9, 1),
+(42, '2020-06-19 21:22:49.736436', '5', 'Alvaro Chirou', 1, '[{\"added\": {}}]', 8, 1),
+(43, '2020-06-19 21:23:16.729788', '5', 'Alvaro Chirou', 2, '[{\"changed\": {\"fields\": [\"description\"]}}]', 8, 1),
+(44, '2020-06-19 21:24:30.125310', '12', 'Programación', 1, '[{\"added\": {}}]', 9, 1),
+(45, '2020-06-19 21:24:32.010768', '6', 'Expertos en Android', 1, '[{\"added\": {}}]', 8, 1),
+(46, '2020-06-19 21:25:16.569777', '13', 'Aplicaciones móviles', 1, '[{\"added\": {}}]', 9, 1),
+(47, '2020-06-19 21:25:27.398535', '7', 'Apphive', 1, '[{\"added\": {}}]', 8, 1),
+(48, '2020-06-19 21:25:57.916140', '10', 'Shopify', 3, '', 9, 1),
+(49, '2020-06-19 21:26:01.790370', '8', 'Blender', 3, '', 9, 1),
+(50, '2020-06-19 21:27:24.212306', '8', 'Bluuweb!', 1, '[{\"added\": {}}]', 8, 1),
+(51, '2020-06-19 21:28:15.955352', '9', 'Cursos Android ANT', 1, '[{\"added\": {}}]', 8, 1),
+(52, '2020-06-19 21:28:54.480344', '10', 'Invence Tech', 1, '[{\"added\": {}}]', 8, 1),
+(53, '2020-06-19 21:29:31.651666', '5', 'Python', 3, '', 9, 1),
+(54, '2020-06-19 21:29:36.718382', '7', 'Kotlin', 3, '', 9, 1),
+(55, '2020-06-19 21:29:39.619241', '6', 'Swift', 3, '', 9, 1),
+(56, '2020-06-19 21:29:43.466565', '2', 'React', 3, '', 9, 1),
+(57, '2020-06-19 21:29:47.057121', '4', 'PHP', 3, '', 9, 1),
+(58, '2020-06-19 21:29:50.507471', '9', 'Plan de negocios', 3, '', 9, 1),
+(59, '2020-06-19 21:30:47.012590', '14', 'Comunicación', 1, '[{\"added\": {}}]', 9, 1),
+(60, '2020-06-19 21:31:38.059778', '11', 'WhatsApp Messenger', 1, '[{\"added\": {}}]', 8, 1),
+(61, '2020-06-19 21:32:10.985590', '12', 'Dropbox', 1, '[{\"added\": {}}]', 8, 1),
+(62, '2020-06-19 21:32:35.352361', '13', 'Instagram', 1, '[{\"added\": {}}]', 8, 1),
+(63, '2020-06-19 21:33:21.798442', '14', 'Spotify', 1, '[{\"added\": {}}]', 8, 1),
+(64, '2020-06-19 21:33:47.612238', '15', 'Shazam', 1, '[{\"added\": {}}]', 8, 1),
+(65, '2020-06-19 21:35:53.746852', '16', 'Desarrollo de Videojuegos con Unity', 1, '[{\"added\": {}}]', 8, 1),
+(66, '2020-06-19 21:39:23.422456', '3', 'Desarrollo web', 3, '', 7, 1);
 
 -- --------------------------------------------------------
 
@@ -269,7 +329,14 @@ CREATE TABLE `listelement_category` (
 --
 
 INSERT INTO `listelement_category` (`id`, `title`, `url_clean`) VALUES
-(1, 'cate 1', 'cate_1');
+(2, 'Canales de YouTube', 'channel_yt'),
+(4, 'Aplicaciones móviles', 'app_m'),
+(5, 'Desarrollo de videojuegos', 'des_vj'),
+(6, 'Finanzas', 'finanzas_'),
+(7, 'Emprendimiento', 'emprendimiento_'),
+(8, 'Datos y análisis', 'd_a'),
+(9, 'Diseño gráfico', 'd_g'),
+(10, 'Música', 'music_');
 
 -- --------------------------------------------------------
 
@@ -291,9 +358,18 @@ CREATE TABLE `listelement_element` (
 --
 
 INSERT INTO `listelement_element` (`id`, `title`, `url_clean`, `description`, `category_id`, `type_id`) VALUES
-(2, 'elemento 1', 'elemento_1', 'descripcion del elemento 1', 1, 1),
-(3, 'Elemento 3', 'elemento_3', 'descripcion del elemento 3', 1, 1),
-(4, 'Elemento 4', 'elemento_4', 'descripcion del elemento 4', 1, 2);
+(5, 'Alvaro Chirou', 'ac', 'Canal dedicado a la seguridad informática', 2, 11),
+(6, 'Expertos en Android', 'ex_an', 'Este canal tiene que ver con la programación. Encontrarás muchos videos sobre programación, especialmente Android, Java y Python.', 2, 12),
+(7, 'Apphive', 'apphive_', 'En apphive estamos comprometidos en ayudar a emprendedores a crear su aplicación móvil para Android e IOS, puedes encontrar consejos para crear un app, tutoriales,  ideas de apps', 2, 13),
+(8, 'Bluuweb!', 'bluuweb_', 'Bienvenido al canal de cursos de desarrollo web y programación!\r\nSoy Ignacio Gutiérrez y de una forma divertida seré tu instructor.\r\n\r\nSiempre he dicho que la práctica hace al maestro, la programación no es más que repetición y repetición, por lo tanto para comenzar solo tienes que atreverte a escribir tus primeras líneas de código, así perderás el miedo y cada vez será más y más sencillo adquirir la lógica de programación.\r\n\r\nSi tu idea es ser un programador web, te recomiendo seguir los siguientes consejos:\r\n\r\nPerseverancia: Trata de practicar todos los días y aunque no te resulte a la primera, volver a intentar. Nadie nace aprendiendo por lo tanto todos pasamos por el mismo proceso.\r\nPaciencia: Puede que al principio te agobie la idea de que no estás avanzando o peor aún que son demasiadas cosas por aprender y que jamás vamos a terminar. Pero tranquilo, el primer paso es escribir tu primer hola mundo... de ahí al infinito.\r\nSonríe y disfruta :)', 2, 1),
+(9, 'Cursos Android ANT', 'cursos_ant', 'Cursos sobre android y sus herramientas para compilar, crear recursos, etcetera... Canal enfocado en aprender desde cero y con buenas practicas', 2, 13),
+(10, 'Invence Tech', 'inv_tech', 'Tutoriales de diversos temas de tecnologia.', 2, 1),
+(11, 'WhatsApp Messenger', 'what_app', 'Era innegable que debía estar aquí la reina de las reinas: esa aplicación que ha hecho vender móviles como ninguna. No concebimos un móvil sin su WhatsApp instalado; igual que tampoco concebimos un smartphone sin tarifa de datos y pantalla táctil.\r\n\r\nMuchas han sido las candidatas a destronarla, pero fue imposible: no hay una app más conocida, usada e instalada en Android que WhatsApp. Lo queramos o no, el top 1 es para ella.', 4, 14),
+(12, 'Dropbox', 'drop_', 'Dropbox promete ser la herramienta universal de sincronizado y guardado de archivos en la nube. Y lo consigue: de esas aplicaciones móviles que merece la pena probar. Sobre todo para aquellos que cargan con la oficina a cuestas.', 4, 14),
+(13, 'Instagram', 'inst_', 'Llegó a ser tan importante que hasta el mismísimo Zuckerberg la compró para su Facebook. Y ahí está, acumulando millones de descargas y de fotografías subidas mientras se reinventa de aplicación para compartir fotos a completa suite de comunicaciones.', 4, 14),
+(14, 'Spotify', 'spo_', 'La aplicación móvil de Spotify (Android, iOS, Windows Phone) se ha actualizado para permitir un mayor streaming de música gratis. Eso sí, en la función básica solamente es posible escuchar las canciones de forma aleatoria; sin embargo, existe la posibilidad de contratar el servicio premium.', 10, 13),
+(15, 'Shazam', 'shazam', 'Shazam es una gran aplicación que te permite identificar aquellas canciones que están sonando a tu alrededor y que tanto te gustan. Aquellas canciones que inundan tus sentidos pero que no sabes cómo se llaman. Solo tienes que conectar la app cuando el tema está sonando y, tras identificarla, puedes descargarla con cualquiera de las otras aplicaciones.', 10, 13),
+(16, 'Desarrollo de Videojuegos con Unity', 'unity_', 'Unity es un motor o engine de creación de videojuegos. Este software se encarga de unir todo lo que utilizaremos en nuestro videojuego, modelos 2D o 3D (Curso Unity 3D y Curso Unity 2D), efectos de sonido, animaciones, música, físicas, interactividad, gameplay o jugabilidad para que puedes crear niveles y mundos de tu videojuego, para luego exportarlo para consolas, PC’s y celulares todo esto lo aprenderás en esta ruta de estudios que te ofrecemos en Platzi iniciando por este curso de Unity.', 5, 13);
 
 -- --------------------------------------------------------
 
@@ -312,8 +388,11 @@ CREATE TABLE `listelement_type` (
 --
 
 INSERT INTO `listelement_type` (`id`, `title`, `url_clean`) VALUES
-(1, 'Producto', 'producto'),
-(2, 'Post', 'post');
+(1, 'Desarrollo web', 'd_w'),
+(11, 'Seguridad informatica y forense', 'seg_iyf'),
+(12, 'Programación', 'prog'),
+(13, 'Aplicaciones móviles', 'app_m'),
+(14, 'Comunicación', 'comu');
 
 --
 -- Índices para tablas volcadas
@@ -438,7 +517,7 @@ ALTER TABLE `auth_permission`
 -- AUTO_INCREMENT de la tabla `auth_user`
 --
 ALTER TABLE `auth_user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de la tabla `auth_user_groups`
@@ -456,7 +535,7 @@ ALTER TABLE `auth_user_user_permissions`
 -- AUTO_INCREMENT de la tabla `django_admin_log`
 --
 ALTER TABLE `django_admin_log`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
 
 --
 -- AUTO_INCREMENT de la tabla `django_content_type`
@@ -474,19 +553,19 @@ ALTER TABLE `django_migrations`
 -- AUTO_INCREMENT de la tabla `listelement_category`
 --
 ALTER TABLE `listelement_category`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `listelement_element`
 --
 ALTER TABLE `listelement_element`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `listelement_type`
 --
 ALTER TABLE `listelement_type`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Restricciones para tablas volcadas
